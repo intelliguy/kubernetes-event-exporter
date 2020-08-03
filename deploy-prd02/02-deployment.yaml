@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: event-exporter
-  namespace: mon
+  namespace: lma
 spec:
   replicas: 1
   template:

@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: event-exporter-cfg
-  namespace: mon
+  namespace: lma
 data:
   config.yaml: |
     logLevel: debug
@@ -15,7 +15,7 @@ data:
       - name: "dump"
         elasticsearch:
           hosts:
-          - "https://taco-elasticsearch-es-http.lma.svc.siim-dev:9200"
+          - "https://taco-elasticsearch-es-http.lma.svc.skb-ssu-prd02.btvpaas.com:9200"
           index: kube-events
           username: elastic
           password: tacoword
